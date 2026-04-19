@@ -17,4 +17,4 @@
 -1 AHT20+BMP280 temperature, humidity, and air pressure reading module[link](https://www.aliexpress.com/item/1005005982427374.html?spm=a2g0o.order_list.order_list_main.161.3b441802WZDiGK) <br>
 -1 VL53L0X time of flight distance measurement sensor module[link](https://www.aliexpress.com/item/1005008798415699.html?spm=a2g0o.order_list.order_list_main.206.3b441802WZDiGK) <br>
 -1 MQ135 air quality / hazardous gas detection sensor module[link](https://www.aliexpress.com/item/1005009467470672.html?spm=a2g0o.order_list.order_list_main.141.3b441802WZDiGK) <br>
--1
+-1 SPO2 module [link](https://www.aliexpress.com/item/1005007015407514.html?spm=a2g0o.order_list.order_list_main.56.3b441802WZDiGK) <br>
