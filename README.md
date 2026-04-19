@@ -6,4 +6,6 @@ A wrist mounted device containing modules which allow it to take in readings suc
 -A laser pointer for better accuracy when measuring distance(can alternatively be toggled on/off through a switch)\
 -A small speaker\
 +Many other minor software features\
-In the future, I also plan on adding a 5V solar panel to charge the battery, attached to a custom PCB which allows both USB-C charging and solar charging
+In the future, I also plan on adding a 5V solar panel to charge the battery, attached to a custom PCB which allows both USB-C charging and solar charging\
+\
+I was inspired to make this after coming across this video: (The Chip-Boy)[https://www.instagram.com/reel/DUBcdKVFByZ/?hl=en]
