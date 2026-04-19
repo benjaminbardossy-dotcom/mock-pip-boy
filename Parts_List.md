@@ -1,4 +1,4 @@
-These are the parts I used:<br>
+**These are the parts I used:**<br>
 Passive Components: <br>
 -6 10 ohm resistors <br>
 -2 100K ohm resistors <br>
