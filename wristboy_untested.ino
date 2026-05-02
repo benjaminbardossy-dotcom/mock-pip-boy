@@ -1,3 +1,7 @@
+//This is the current code that the ESP32 runs in order for the main features to work.
+//Many other minor features will be added in the future
+//I used a bunch of adafruit or other libraries, listed below in the include statements
+
 #include <Wire.h>
 #include <SPI.h>
 #include <Adafruit_GFX.h>
