@@ -1,5 +1,5 @@
-# Wrist Boy
-A wrist mounted device containing modules which allow it to take in readings such as the outside temperature, humidity, air pressure, air quality, user heartrate / SpO2 of the user. Readings will be displayed onto a 2.42in I2C OLED, which the player can interact with using the buttons attached. Other features include:\
+# Overview
+The wrist boy is a wrist mounted device containing modules which allow it to take in readings such as the outside temperature, humidity, air pressure, air quality, user heartrate / SpO2 of the user. Readings will be displayed onto a 2.42in I2C OLED, which the player can interact with using the buttons attached. Other features include:\
 -2 pairs of LED's acting as straight or perpendicular flashlights(toggled through switches)\
 -A laser pointer(toggled through switches)\
 -Vl53l0X module which can measure distance\
@@ -8,18 +8,23 @@ A wrist mounted device containing modules which allow it to take in readings suc
 +Many other software features\
 In the future, I also plan on adding a 5V solar panel to charge the battery, attached to a custom PCB which allows both USB-C charging and solar charging
 
-I was inspired to make this after coming across this video: [The Chip-Boy](https://www.instagram.com/reel/DUBcdKVFByZ/?hl=en). Seeing this video, I was inspired to make my own with similar modules. I thought it was such a cool idea, and believed I could learn more about modules and the arduino IDE by creating one of my own.
+# Why Did I Make This?
+I was inspired to make this after coming across this project: [The Chip-Boy](https://github.com/hungggryvic/Chip-Boy). Seeing this project, I was inspired to make my own with similar modules. I thought it was a neat concept, and wanted to create my own.
 
-# Photos:
+The idea behind the wrist boy was always the same. I wanted a device able to take in readings from the environment around me, anytime, anywhere, with versitile highly modifiable modules which could easily be changed to fit any need through code. I wanted a device which could connect to wifi if needed, but run completely off grid whenever necessary as long as it has charge.
 
-### The 3D model for the case I created to mount the PCB to using M2 screws. The model is comprised of two seperate parts which slot together to simplify 3D printing:
+I had envisioned a few changes to the design, including adding more "survival" based modules. I wanted this device to warn the user if there was any potential danger. To implement this, I added an SpO2 module to measure the users heartrate, an AHT20+BMP280 module for temp and air pressure, an MQ135 module for air quality, and a red LED which would flash if there was any potential danger to the user(E.x. low air quality readings from the MQ135, high temp readings from the AHT20+BMP280.).
+
+# The Design:
+
+## The Case
 <img width="896" height="693" alt="image" src="https://github.com/user-attachments/assets/d986a54d-43c3-4538-8754-b08bb74d1f6c" />
 
-### The PCB which will be mounted on the case:
-#### 3D View:
+## The PCB
+## 3D View:
 <img width="956" height="622" alt="image" src="https://github.com/user-attachments/assets/91340fea-15ff-482a-b676-fbc31d23805c" />
 
-#### Schematic:
+## Schematic
 <img width="981" height="614" alt="Screenshot 2026-05-02 170038" src="https://github.com/user-attachments/assets/63c93d35-d6e7-4887-87a5-3f6c5fbe6f2c" />
 
 # BOM
