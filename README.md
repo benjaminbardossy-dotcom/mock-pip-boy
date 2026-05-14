@@ -11,15 +11,17 @@ In the future, I also plan on adding a 5V solar panel to charge the battery, att
 # Why Did I Make This?
 I was inspired to make this after coming across this project: [The Chip-Boy](https://github.com/hungggryvic/Chip-Boy). Seeing this project, I was inspired to make my own with similar modules. I thought it was a neat concept, and wanted to create my own.
 
+Despite similar ideas, I had envisioned a few changes to the design, including adding more "survival" based modules. I wanted this device to warn the user if there was any potential danger. To implement this, I added an SpO2 module to measure the users heartrate, an AHT20+BMP280 module for temp and air pressure, an MQ135 module for air quality, and a red LED which would flash if there was any potential danger to the user(E.x. low air quality readings from the MQ135, high temp readings from the AHT20+BMP280.).
+
 The idea behind the wrist boy was always the same. I wanted a device able to take in readings from the environment around me, anytime, anywhere, with versitile highly modifiable modules which could easily be changed to fit any need through code. I wanted a device which could connect to wifi if needed, but run completely off grid whenever necessary as long as it has charge.
 
-I had envisioned a few changes to the design, including adding more "survival" based modules. I wanted this device to warn the user if there was any potential danger. To implement this, I added an SpO2 module to measure the users heartrate, an AHT20+BMP280 module for temp and air pressure, an MQ135 module for air quality, and a red LED which would flash if there was any potential danger to the user(E.x. low air quality readings from the MQ135, high temp readings from the AHT20+BMP280.).
+After many hours of planning and many alterations to the design, I have created the design below.
 
-# The Design:
+# The Design(WIP):
 
 ## The Case
-I designed a case to mount the PCB to, which could then slip onto the users wrist. The case features two seperate pieces which snap together to ease 3D printing and reduce support generation where possible. The PCB itself mounts to the case through the use of M2 screws. The case features 4 small holes in each corner to place M2 heat inserts into, which then mount the PCB in place by screwing in 4 M2 screws into on the 4 corners of the PCB. The case includes a small rectangular hole near the bottom, which the SpO2 module slots into, before the wires are strung through the hollow case and connected to the PCB. This allows proper heart rate readings to be read, as the module is lightly pressed into the users wrist at constant pressure.
 <img width="896" height="693" alt="image" src="https://github.com/user-attachments/assets/d986a54d-43c3-4538-8754-b08bb74d1f6c" />
+I designed a case to mount the PCB to, which could then slip onto the users wrist. The case features two seperate pieces which snap together to ease 3D printing and reduce support generation where possible. The PCB itself mounts to the case through the use of M2 screws. The case features 4 small holes in each corner to place M2 heat inserts into, which then mount the PCB in place by screwing in 4 M2 screws into on the 4 corners of the PCB. The case includes a small rectangular hole near the bottom, which the SpO2 module slots into, before the wires are strung through the hollow case and connected to the PCB. This allows proper heart rate readings to be read, as the module is lightly pressed into the users wrist at constant pressure.
 
 ## The PCB
 ## 3D View:
@@ -54,3 +56,6 @@ I designed a case to mount the PCB to, which could then slip onto the users wris
 | MAX98357A Module | 1 | 3.07  | https://www.aliexpress.com/item/1005007068815767.html?spm=a2g0o.detail.0.0.6565Ol4TOl4TF1&mp=1&pdp_npi=6%40dis%21CAD%21CAD+3.07%21CAD+3.07%21%21CAD+2.82%21%21%21%402101e2b417777604375576021e62d1%2112000056349468594%21ct%21CA%216516785883%21%211%210%21 |
 | 8Ohm 1W Speaker | 1 | 4.82 | https://www.aliexpress.com/item/1005011920753806.html?spm=a2g0o.detail.0.0.6565Ol4TOl4TF1&mp=1&pdp_npi=6%40dis%21CAD%21CAD+9.84%21CAD+4.82%21%21CAD+4.39%21%21%21%402101e2b417777604375576021e62d1%2112000057040904678%21ct%21CA%216516785883%21%211%210%21 |
 | Piezo Buzzer | 1 | 0.27 | https://www.aliexpress.com/item/1005006260328559.html?spm=a2g0o.productlist.main.4.1cee40902qEetf&aem_p4p_detail=20260502153430362601419017360005695929&algo_pvid=9c8b0b99-3bbf-419b-8874-6d4fe906f763&algo_exp_id=9c8b0b99-3bbf-419b-8874-6d4fe906f763-3&pdp_ext_f=%7B%22order%22%3A%221007%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21CAD%211.51%211.36%21%21%211.09%210.98%21%402101eede17777612699931507ec38b%2112000036509108003%21sea%21CA%216516785883%21X%211%210%21n_tag%3A-29919%3Bd%3Ab1c396d5%3Bm03_new_user%3A-29895&curPageLogUid=fZmKYKihIY1A&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006260328559%7C_p_origin_prod%3A&search_p4p_id=20260502153430362601419017360005695929_1 |
+
+# The Future of The Wrist Boy
+This design is not final, and I plan on refining the PCB and case alot more in the future. I plan on having a fully integrated circuit with no prebuilt modules, which woiuld save space and allow me to build a full case which encloses the hardware.,
