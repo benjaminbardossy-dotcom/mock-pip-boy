@@ -9,7 +9,7 @@ The wrist boy is a wrist mounted device containing modules which allow it to tak
 In the future, I also plan on adding a 5V solar panel to charge the battery, attached to a custom PCB which allows both USB-C charging and solar charging
 
 # Why Did I Make This?
-I was inspired to make this after coming across this project: [The Chip-Boy](https://github.com/hungggryvic/Chip-Boy). Seeing this project, I was inspired to make my own with similar modules. I thought it was a neat concept, and wanted to create my own.
+I was inspired to make this after coming across this project: [The Chip-Boy](https://github.com/hungggryvic/Chip-Boy). Seeing this project, I was inspired to make my own with similar modules.
 
 Despite similar ideas, I had envisioned a few changes to the design, including adding more "survival" based modules. I wanted this device to warn the user if there was any potential danger. To implement this, I added an SpO2 module to measure the users heartrate, an AHT20+BMP280 module for temp and air pressure, an MQ135 module for air quality, and a red LED which would flash if there was any potential danger to the user(E.x. low air quality readings from the MQ135, high temp readings from the AHT20+BMP280.).
 
