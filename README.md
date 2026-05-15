@@ -15,7 +15,7 @@ Despite similar ideas, I had envisioned a few changes to the design, including a
 
 The idea behind the wrist boy was always the same. I wanted a device able to take in readings from the environment around me, anytime, anywhere, with versitile highly modifiable modules which could easily be changed to fit any need through code. I wanted a device which could connect to wifi if needed, but run completely off grid whenever necessary as long as it has charge.
 
-After many hours of planning and many alterations to the design, I have created the design below.
+After taking into consideration what I wanted from this device, I've created the design below:
 
 # The Design(WIP):
 
@@ -60,4 +60,4 @@ The PCB features a 2 layer design, with sizing less than 100mmx100mm to keep pri
 | Piezo Buzzer | 1 | 0.27 | https://www.aliexpress.com/item/1005006260328559.html?spm=a2g0o.productlist.main.4.1cee40902qEetf&aem_p4p_detail=20260502153430362601419017360005695929&algo_pvid=9c8b0b99-3bbf-419b-8874-6d4fe906f763&algo_exp_id=9c8b0b99-3bbf-419b-8874-6d4fe906f763-3&pdp_ext_f=%7B%22order%22%3A%221007%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21CAD%211.51%211.36%21%21%211.09%210.98%21%402101eede17777612699931507ec38b%2112000036509108003%21sea%21CA%216516785883%21X%211%210%21n_tag%3A-29919%3Bd%3Ab1c396d5%3Bm03_new_user%3A-29895&curPageLogUid=fZmKYKihIY1A&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006260328559%7C_p_origin_prod%3A&search_p4p_id=20260502153430362601419017360005695929_1 |
 
 # The Future of The Wrist Boy
-This design is not final, and I plan on refining the PCB and case alot more in the future. I plan on having a fully integrated circuit with no prebuilt modules, which woiuld save space and allow me to build a full case which encloses the hardware.,
+This design is not final, and I plan on refining the PCB and case alot more in the future. I plan on having a fully integrated circuit with no prebuilt modules, which woiuld save space and allow me to build a full case which encloses the hardware, and I also plan on changing and refining the code as I test the hardware.
