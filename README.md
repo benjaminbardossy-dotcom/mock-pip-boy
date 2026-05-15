@@ -1,9 +1,9 @@
 # Overview
 The wrist boy is a wrist mounted device containing modules which allow it to take in readings such as the outside temperature, humidity, air pressure, air quality, user heartrate / SpO2 of the user. Readings will be displayed onto a 2.42in I2C OLED, which the player can interact with using the buttons attached. Other features include:\
--2 pairs of LED's acting as straight or perpendicular flashlights(toggled through switches)\
+-2 pairs of LED's acting as straight or perpendicular flashlights\
 -A laser pointer(toggled through switches)\
 -Vl53l0X module which can measure distance\
--A laser pointer for better accuracy when measuring distance(can alternatively be toggled on/off through a switch)\
+-A laser pointer for better accuracy when measuring distance\
 -A small speaker + mic\
 +Many other software features\
 For a more indepth look at the features, see [Features](#features)\
@@ -14,18 +14,29 @@ I was inspired to make this after coming across this project: [The Chip-Boy](htt
 
 Despite similar ideas, I had envisioned a few changes to the design, including adding more "survival" based modules. I wanted this device to warn the user if there was any potential danger. To implement this, I added an SpO2 module to measure the users heartrate, an AHT20+BMP280 module for temp and air pressure, an MQ135 module for air quality, and a red LED which would flash if there was any potential danger to the user(E.x. low air quality readings from the MQ135, high temp readings from the AHT20+BMP280.).
 
-However, the idea behind the wrist boy was always the same. I wanted a device able to take in readings from the environment around me, anytime, anywhere, with versitile highly modifiable modules which could easily be coded t fit any need. I wanted a device which could connect to wifi if needed, but run completely off grid whenever necessary as long as it has charge.
+However, the idea behind the wrist boy was always the same. I wanted a device able to take in readings from the environment around me, anytime, anywhere, with versitile highly modifiable modules which could easily be coded to fit any need. I wanted a device which could connect to wifi if needed, but run completely off grid whenever necessary as long as it has charge.
 
 After taking into consideration what I wanted from this device, I've created the design below:
 
 # The Design(WIP):
 
 ## Features
-- 
-- A rechargable LIPO battery which can be charged through the attached TP4056 module.
-- VL53L0X module for accurately measuring distance to the nearest mm
-- A laser which toggles on for accurate measurement when using the VL53L0X, or can alternatively be toggled through the second switch attached
-- 2 pairs of LED's which function as flashlights for the user, and are toggled through the attached switches
+- **Main Functionality**
+   - Custom PCB powered by an ESP32 module which serves as the heart of the device as it handles all firmware
+   - Responsive user interface, which is displayed on an 2.42 inch OLED screen, and can be interacted with through the attached switches
+   - Rechargable LIPO battery which can be charged through the attached TP4056 module.
+   - laser which toggles on for accurate measurement when using the VL53L0X, or can alternatively be toggled through the second switch attached
+   - 2 pairs of LED's which function as flashlights for the user, and are toggled through the attached switches
+   - Micro SD card reader module which function as extended storage for the ESP32. For this device it stores music data, which can then be played on the attached speaker.
+- **Environmental Data Gathering**
+   - MAX30102 module to measure the users heatrate
+   - MQ135 module to measure general air quality
+   - AHT20+BMP280 to measure environmental temperature and air pressure
+   - VL53L0X module for accurately measuring distance to the nearest mm
+- **Audio**
+   - Small speaker to play music or other audio
+   - Small microphone which takes in audio and can be used to program a variety of features, such as voice activated commands
+   - A piezo buzzer which adds depth to the interface by playing different frequency beeps depending on user input
 
 ## The Case
 <img width="896" height="693" alt="image" src="https://github.com/user-attachments/assets/d986a54d-43c3-4538-8754-b08bb74d1f6c" />\
