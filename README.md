@@ -53,6 +53,7 @@ If you're interested in creating your own wrist boy, the simplified construction
    - Place the MQ135 and aht20+bmp280 into their places in the case, securing with M2 screws and nuts
    - Optionally mount the laser pointer to the top of the VL53l0X
    - Use the solder gun to melt the M2 heat inserts into the case in the holes located at each corner of the case
+   - Place battery into the case and secure with double sided tape
    - Place the PCB on top of the case in line with the holes
    - Using M2 screws, secure the PCB to the case
 4. Firmware
