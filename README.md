@@ -24,13 +24,14 @@ After taking into consideration what I wanted from this device, I've created the
 I designed a case to mount the PCB to, which could then slip onto the users wrist. The case features two seperate pieces which snap together to ease 3D printing and reduce support generation where possible. The PCB itself mounts to the case through the use of M2 screws. The case features 4 small holes in each corner to place M2 heat inserts into, which then mount the PCB in place by screwing in 4 M2 screws into on the 4 corners of the PCB. The case includes a small rectangular hole near the bottom, which the SpO2 module slots into, before the wires are strung through the hollow case and connected to the PCB. This allows proper heart rate readings to be read, as the module is lightly pressed into the users wrist at constant pressure. The case also includes holes for both the MQ135 and AHT20+BMP280, allowing the sensors to fit into the case and under the PCB.
 
 ## The PCB
-<img width="1014" height="649" alt="image" src="https://github.com/user-attachments/assets/cd6eff4f-224c-4be9-be90-6f4aeb84834d" />
+<img width="1014" height="649" alt="image" src="https://github.com/user-attachments/assets/cd6eff4f-224c-4be9-be90-6f4aeb84834d" />\
 The PCB features a 2 layer design, with sizing less than 100mmx100mm to keep price low. The microcontroller used was the ESP32. which is soldered directly to the board. The OLED screen is quite large, sitting at 48x70mm, and for this reason it is mounted to female headers, allowing it to sit overtop of the ESP32 and other components. The two pairs of LED's sit off the board
 ## 3D View:
-<img width="896" height="567" alt="image" src="https://github.com/user-attachments/assets/117c59d4-31c1-4fe9-b018-70c8b0897cfb" />
+<img width="896" height="567" alt="image" src="https://github.com/user-attachments/assets/117c59d4-31c1-4fe9-b018-70c8b0897cfb" />\
 
-## Schematic
-<img width="981" height="614" alt="Screenshot 2026-05-02 170038" src="https://github.com/user-attachments/assets/63c93d35-d6e7-4887-87a5-3f6c5fbe6f2c" />
+## Wiring Schematic
+<img width="981" height="614" alt="Screenshot 2026-05-02 170038" src="https://github.com/user-attachments/assets/63c93d35-d6e7-4887-87a5-3f6c5fbe6f2c" />\
+This wiring schematic is identical to the routing on the PCB, but shown in greater detail.
 
 # BOM
 | Material      | Quantity      | Cost($CAD)     | Link          |
