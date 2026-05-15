@@ -47,10 +47,11 @@ If you're interested in creating your own wrist boy, the simplified construction
 3. Assemble
    - Solder components to the board following the rules below and using the schematic as reference
       - make sure to solder a 4 pin female header instead of the screen to the designated OLED pins on the board
-      - Do not solder the aht20+bmp280, MQ135, or MAX30102 directly to the board
+      - Do not solder the aht20+bmp280, MQ135, laser pointer, or MAX30102 directly to the board
    - Place the MAX30102 into its designated slot near the bottom of the case, placing the wires through the case
    - Superglue the connecting pieces of the 3D printed case together and let set
    - Place the MQ135 and aht20+bmp280 into their places in the case, securing with M2 screws and nuts
+   - Optionally mount the laser pointer to the top of the VL53l0X
    - Use the solder gun to melt the M2 heat inserts into the case in the holes located at each corner of the case
    - Place the PCB on top of the case in line with the holes
    - Using M2 screws, secure the PCB to the case
