@@ -6,6 +6,7 @@ The wrist boy is a wrist mounted device containing modules which allow it to tak
 -A laser pointer for better accuracy when measuring distance(can alternatively be toggled on/off through a switch)\
 -A small speaker + mic\
 +Many other software features\
+For a more indepth look at the features, see [Features](#features)\
 **This design is still a WIP, and many other features are planned. See [The Future of The Wrist Boy](#the-future-of-the-wrist-boy)
 
 # Why Did I Make This?
