@@ -33,7 +33,12 @@ The PCB features a 2 layer design, with sizing less than 100mmx100mm to keep pri
 <img width="981" height="614" alt="Screenshot 2026-05-02 170038" src="https://github.com/user-attachments/assets/63c93d35-d6e7-4887-87a5-3f6c5fbe6f2c" />\
 This wiring schematic is identical to the routing on the PCB, but shown in greater detail.
 
-# BOM
+# Assembling Your Own
+If you're interested in creating your own wrist boy, the construction of the wrist boy is as follows:
+1. Gather the necessary files:
+   - Download the 
+
+## BOM
 | Material      | Quantity      | Cost($CAD)     | Link          |
 | ------------- | ------------- | ------------- | ------------- |
 | M2 Screws | 10 | 0.21 | https://www.amazon.ca/780Pcs-Screws-Metric-Washers-Steel-Black/dp/B0D7QCS5FL?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=A3GSZ4RKHEJUDQ&th=1 |
