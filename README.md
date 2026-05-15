@@ -19,6 +19,9 @@ After taking into consideration what I wanted from this device, I've created the
 
 # The Design(WIP):
 
+## Features
+-
+
 ## The Case
 <img width="896" height="693" alt="image" src="https://github.com/user-attachments/assets/d986a54d-43c3-4538-8754-b08bb74d1f6c" />\
 I designed a case to mount the PCB to, which could then slip onto the users wrist. The case features two seperate pieces which snap together to ease 3D printing and reduce support generation where possible. The PCB itself mounts to the case through the use of M2 screws. The case features 4 small holes in each corner to place M2 heat inserts into, which then mount the PCB in place by screwing in 4 M2 screws into on the 4 corners of the PCB. The case includes a small rectangular hole near the bottom, which the SpO2 module slots into, before the wires are strung through the hollow case and connected to the PCB. This allows proper heart rate readings to be read, as the module is lightly pressed into the users wrist at constant pressure. The case also includes holes for both the MQ135 and AHT20+BMP280, allowing the sensors to fit into the case and under the PCB.
