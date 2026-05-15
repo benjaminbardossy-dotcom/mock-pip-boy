@@ -9,7 +9,7 @@ The wrist boy is a wrist mounted device containing modules which allow it to tak
 For a more indepth look at the features, see [Features](#features)\
 **This design is still a WIP, and many other features are planned. See [The Future of The Wrist Boy](#the-future-of-the-wrist-boy)
 
-# Why Did I Make This?
+# Why I Made This
 I was inspired to make this after coming across this project: [The Chip-Boy](https://github.com/hungggryvic/Chip-Boy). Seeing this project, I was inspired to make my own with similar modules.
 
 Despite similar ideas, I had envisioned a few changes to the design, including adding more "survival" based modules. I wanted this device to warn the user if there was any potential danger. To implement this, I added an SpO2 module to measure the users heartrate, an AHT20+BMP280 module for temp and air pressure, an MQ135 module for air quality, and a red LED which would flash if there was any potential danger to the user(E.x. low air quality readings from the MQ135, high temp readings from the AHT20+BMP280.).
