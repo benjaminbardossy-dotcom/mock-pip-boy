@@ -6,7 +6,7 @@ The wrist boy is a wrist mounted device containing modules which allow it to tak
 -A laser pointer for better accuracy when measuring distance(can alternatively be toggled on/off through a switch)\
 -A small speaker + mic\
 +Many other software features\
-In the future, I also plan on adding a 5V solar panel to charge the battery, attached to a custom PCB which allows both USB-C charging and solar charging
+**This design is still a WIP, and many other features are planned. See [The Future of The Wrist Boy](#the-future-of-the-wrist-boy)
 
 # Why Did I Make This?
 I was inspired to make this after coming across this project: [The Chip-Boy](https://github.com/hungggryvic/Chip-Boy). Seeing this project, I was inspired to make my own with similar modules.
@@ -20,7 +20,11 @@ After taking into consideration what I wanted from this device, I've created the
 # The Design(WIP):
 
 ## Features
--
+- 
+- A rechargable LIPO battery which can be charged through the attached TP4056 module.
+- VL53L0X module for accurately measuring distance to the nearest mm
+- A laser which toggles on for accurate measurement when using the VL53L0X, or can alternatively be toggled through the second switch attached
+- 2 pairs of LED's which function as flashlights for the user, and are toggled through the attached switches
 
 ## The Case
 <img width="896" height="693" alt="image" src="https://github.com/user-attachments/assets/d986a54d-43c3-4538-8754-b08bb74d1f6c" />\
@@ -92,4 +96,4 @@ If you're interested in creating your own wrist boy, the simplified construction
 | Piezo Buzzer | 1 | 0.27 | https://www.aliexpress.com/item/1005006260328559.html?spm=a2g0o.productlist.main.4.1cee40902qEetf&aem_p4p_detail=20260502153430362601419017360005695929&algo_pvid=9c8b0b99-3bbf-419b-8874-6d4fe906f763&algo_exp_id=9c8b0b99-3bbf-419b-8874-6d4fe906f763-3&pdp_ext_f=%7B%22order%22%3A%221007%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21CAD%211.51%211.36%21%21%211.09%210.98%21%402101eede17777612699931507ec38b%2112000036509108003%21sea%21CA%216516785883%21X%211%210%21n_tag%3A-29919%3Bd%3Ab1c396d5%3Bm03_new_user%3A-29895&curPageLogUid=fZmKYKihIY1A&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005006260328559%7C_p_origin_prod%3A&search_p4p_id=20260502153430362601419017360005695929_1 |
 
 # The Future of The Wrist Boy
-This design is not final, and I plan on refining the PCB and case alot more in the future. I plan on having a fully integrated circuit with no prebuilt modules, which woiuld save space and allow me to build a full case which encloses the hardware, and I also plan on changing and refining the code as I test the hardware.
+This design is not final, and I plan on refining the PCB and case alot more in the future. I plan on having a fully integrated circuit with no prebuilt modules, which woiuld save space and allow me to build a full case which encloses the hardware, and I also plan on changing and refining the code as I test the hardware. Another large modification I have planned is the addition of a 5V solar panel to charge the battery, attached to a custom PCB which allows both USB-C charging and solar charging.
