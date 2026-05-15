@@ -13,7 +13,7 @@ I was inspired to make this after coming across this project: [The Chip-Boy](htt
 
 Despite similar ideas, I had envisioned a few changes to the design, including adding more "survival" based modules. I wanted this device to warn the user if there was any potential danger. To implement this, I added an SpO2 module to measure the users heartrate, an AHT20+BMP280 module for temp and air pressure, an MQ135 module for air quality, and a red LED which would flash if there was any potential danger to the user(E.x. low air quality readings from the MQ135, high temp readings from the AHT20+BMP280.).
 
-The idea behind the wrist boy was always the same. I wanted a device able to take in readings from the environment around me, anytime, anywhere, with versitile highly modifiable modules which could easily be changed to fit any need through code. I wanted a device which could connect to wifi if needed, but run completely off grid whenever necessary as long as it has charge.
+However, the idea behind the wrist boy was always the same. I wanted a device able to take in readings from the environment around me, anytime, anywhere, with versitile highly modifiable modules which could easily be coded t fit any need. I wanted a device which could connect to wifi if needed, but run completely off grid whenever necessary as long as it has charge.
 
 After taking into consideration what I wanted from this device, I've created the design below:
 
@@ -25,7 +25,7 @@ I designed a case to mount the PCB to, which could then slip onto the users wris
 
 ## The PCB
 <img width="1014" height="649" alt="image" src="https://github.com/user-attachments/assets/cd6eff4f-224c-4be9-be90-6f4aeb84834d" />\
-The PCB features a 2 layer design, with sizing less than 100mmx100mm to keep price low. The microcontroller used was the ESP32. which is soldered directly to the board. The OLED screen is quite large, sitting at 48x70mm, and for this reason it is mounted to female headers, allowing it to sit overtop of the ESP32 and other components. The two pairs of LED's sit off the board
+The PCB features a 2 layer design, with a track size of 0.25mm, and an overall sizing of 67x107mm. The microcontroller used was the ESP32. which is soldered directly to the board. The OLED screen is quite large, sitting at 48x70mm, and for this reason it is mounted to female headers, allowing it to sit overtop of the ESP32 and other components. The two pairs of LED's sit off the board
 ## 3D View:
 <img width="896" height="567" alt="image" src="https://github.com/user-attachments/assets/117c59d4-31c1-4fe9-b018-70c8b0897cfb" />\
 
@@ -34,9 +34,30 @@ The PCB features a 2 layer design, with sizing less than 100mmx100mm to keep pri
 This wiring schematic is identical to the routing on the PCB, but shown in greater detail.
 
 # Assembling Your Own
-If you're interested in creating your own wrist boy, the construction of the wrist boy is as follows:
-1. Gather the necessary files:
-   - Download the 
+If you're interested in creating your own wrist boy, the simplified construction of the wrist boy is as follows:
+1. Gather the necessary files(All files / folders referenced can be found at the top of this repo):
+   - Download the step files found in folder labled CAD Models
+   - Download the zip file containing the gerber files for the PCB labled wrist_boy_gerber.zip, found in the folder labled PCB
+2. Gather the Parts
+   - See the BOM below and order any parts you don't already have using the links provided
+   - Go to JLCPCB and start a new order
+   - Drag and drop wrist_boy_gerber.zip into the file uploader
+   - Submit the order
+   -Upload the step files to a 3D printing application of your choice and print the models OR upload the step files to JLCPCB's 3D printing service and add to your existing PCB order if you don't have access to a 3D printer
+3. Assemble
+   - Solder components to the board following the rules below and using the schematic as reference
+      - make sure to solder a 4 pin female header instead of the screen to the designated OLED pins on the board
+      - Do not solder the aht20+bmp280, MQ135, or MAX30102 directly to the board
+   - Place the MAX30102 into its designated slot near the bottom of the case, placing the wires through the case
+   - Superglue the connecting pieces of the 3D printed case together and let set
+   - Place the MQ135 and aht20+bmp280 into their places in the case, securing with M2 screws and nuts
+   - Use the solder gun to melt the M2 heat inserts into the case in the holes located at each corner of the case
+   - Place the PCB on top of the case in line with the holes
+   - Using M2 screws, secure the PCB to the case
+4. Firmware
+   - Download the code using the provided ino file wristboy_untested.ino
+   - Plug the ESP32 in, and connect to whatever device you're using to upload the code
+   - Upload the code to the ESP32
 
 ## BOM
 | Material      | Quantity      | Cost($CAD)     | Link          |
