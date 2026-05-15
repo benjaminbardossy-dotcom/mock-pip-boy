@@ -30,7 +30,7 @@ The PCB features a 2 layer design, with a track size of 0.25mm, and an overall s
 <img width="896" height="567" alt="image" src="https://github.com/user-attachments/assets/117c59d4-31c1-4fe9-b018-70c8b0897cfb" />\
 
 ## Wiring Schematic
-<img width="981" height="614" alt="Screenshot 2026-05-02 170038" src="https://github.com/user-attachments/assets/63c93d35-d6e7-4887-87a5-3f6c5fbe6f2c" />\
+<img width="3507" height="2480" alt="image" src="https://github.com/user-attachments/assets/85edcb3a-183d-456b-b924-5451f5f1c2ae" />
 This wiring schematic is identical to the routing on the PCB, but shown in greater detail.
 
 # Assembling Your Own
