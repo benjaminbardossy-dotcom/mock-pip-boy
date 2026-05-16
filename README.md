@@ -1,5 +1,5 @@
 # Overview
-The wrist boy is a wrist mounted device containing modules which allow it to take in readings such as the outside temperature, humidity, air pressure, air quality, user heartrate / SpO2 of the user. Readings will be displayed onto a 2.42in I2C OLED, which the player can interact with using the buttons attached. Other features include:\
+The wrist boy is a wrist mounted device containing modules which allow it to take in readings such as the outside temperature, humidity, air pressure, air quality, user heart rate / SpO2 of the user. Readings will be displayed onto a 2.42in I2C OLED, which the player can interact with using the buttons attached. Other features include:\
 -2 pairs of LED's acting as straight or perpendicular flashlights\
 -A laser pointer(toggled through switches)\
 -Vl53l0X module which can measure distance\
@@ -14,7 +14,7 @@ I was inspired to make this after coming across this project: [The Chip-Boy](htt
 
 Despite similar ideas, I had envisioned a few changes to the design, including adding more "survival" based modules. I wanted this device to warn the user if there was any potential danger. To implement this, I added an SpO2 module to measure the users heartrate, an AHT20+BMP280 module for temp and air pressure, an MQ135 module for air quality, and a red LED which would flash if there was any potential danger to the user(E.x. low air quality readings from the MQ135, high temp readings from the AHT20+BMP280.).
 
-However, the idea behind the wrist boy was always the same. I wanted a device able to take in readings from the environment around me, anytime, anywhere, with versitile highly modifiable modules which could easily be coded to fit any need. I wanted a device which could connect to wifi if needed, but run completely off grid whenever necessary as long as it has charge.
+However, the idea behind the wrist boy was always the same. I wanted a device able to take in readings from the environment around me, anytime, anywhere, with versatile highly modifiable modules which could easily be coded to fit any need. I wanted a device which could connect to wifi if needed, but run completely off grid whenever necessary as long as it has charge.
 
 After taking into consideration what I wanted from this device, I've created the design below:
 
@@ -24,7 +24,7 @@ After taking into consideration what I wanted from this device, I've created the
 - **Main Functionality**
    - Custom PCB powered by an ESP32 module which serves as the heart of the device as it handles all firmware
    - Responsive user interface, which is displayed on an 2.42 inch OLED screen, and can be interacted with through the attached switches
-   - Rechargable LIPO battery which can be charged through the attached TP4056 module.
+   - Rechargeable LIPO battery which can be charged through the attached TP4056 module.
    - laser which toggles on for accurate measurement when using the VL53L0X, or can alternatively be toggled through the second switch attached
    - 2 pairs of LED's which function as flashlights for the user, and are toggled through the attached switches
    - Micro SD card reader module which function as extended storage for the ESP32. For this device it stores music data, which can then be played on the attached speaker.
@@ -40,11 +40,11 @@ After taking into consideration what I wanted from this device, I've created the
 
 ## The Case
 <img width="896" height="693" alt="image" src="https://github.com/user-attachments/assets/d986a54d-43c3-4538-8754-b08bb74d1f6c" />\
-I designed a case to mount the PCB to, which could then slip onto the users wrist. The case features two seperate pieces which snap together to ease 3D printing and reduce support generation where possible. The PCB itself mounts to the case through the use of M2 screws. The case features 4 small holes in each corner to place M2 heat inserts into, which then mount the PCB in place by screwing in 4 M2 screws into on the 4 corners of the PCB. The case includes a small rectangular hole near the bottom, which the SpO2 module slots into, before the wires are strung through the hollow case and connected to the PCB. This allows proper heart rate readings to be read, as the module is lightly pressed into the users wrist at constant pressure. The case also includes holes for both the MQ135 and AHT20+BMP280, allowing the sensors to fit into the case and under the PCB.
+I designed a case to mount the PCB to, which could then slip onto the user's wrist. The case features two separate pieces which snap together to ease 3D printing and reduce support generation where possible. The PCB itself mounts to the case through the use of M2 screws. The case features 4 small holes in each corner to place M2 heat inserts into, which then mount the PCB in place by screwing in 4 M2 screws into the 4 corners of the PCB. The case includes a small rectangular hole near the bottom, which the SpO2 module slots into, before the wires are strung through the hollow case and connected to the PCB. This allows proper heart rate readings to be read, as the module is lightly pressed into the user's wrist at constant pressure. The case also includes holes for both the MQ135 and AHT20+BMP280, allowing the sensors to fit into the case and under the PCB.
 
 ## The PCB
 <img width="1014" height="649" alt="image" src="https://github.com/user-attachments/assets/cd6eff4f-224c-4be9-be90-6f4aeb84834d" />\
-The PCB features a 2 layer design, with a track size of 0.25mm, and an overall sizing of 67x107mm. The microcontroller used was the ESP32. which is soldered directly to the board. The OLED screen is quite large, sitting at 48x70mm, and for this reason it is mounted to female headers, allowing it to sit overtop of the ESP32 and other components. The two pairs of LED's sit off the board
+The PCB features a 2 layer design, with a track size of 0.25mm, and an overall sizing of 67x107mm. The microcontroller used was the ESP32. which is soldered directly to the board. The OLED screen is quite large, sitting at 48x70mm, and for this reason it is mounted to female headers, allowing it to sit overtop of the ESP32 and other components. The two pairs of LED's sit off the board, acting as flashlights.
 ## 3D View:
 <img width="896" height="567" alt="image" src="https://github.com/user-attachments/assets/117c59d4-31c1-4fe9-b018-70c8b0897cfb" />\
 
@@ -55,8 +55,8 @@ This wiring schematic is identical to the routing on the PCB, but shown in great
 # Assembling Your Own
 If you're interested in creating your own wrist boy, the simplified construction of the wrist boy is as follows:
 1. Gather the necessary files(All files / folders referenced can be found at the top of this repo):
-   - Download the step files found in folder labled CAD Models
-   - Download the zip file containing the gerber files for the PCB labled wrist_boy_gerber.zip, found in the folder labled PCB
+   - Download the step files found in folder labeled CAD Models
+   - Download the zip file containing the gerber files for the PCB labeled wrist_boy_gerber.zip, found in the folder labeled PCB
 2. Gather the Parts
    - See the BOM below and order any parts you don't already have using the links provided
    - Go to JLCPCB and start a new order
