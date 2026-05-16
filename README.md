@@ -62,7 +62,7 @@ If you're interested in creating your own wrist boy, the simplified construction
    - Go to JLCPCB and start a new order
    - Drag and drop wrist_boy_gerber.zip into the file uploader
    - Submit the order
-   -Upload the step files to a 3D printing application of your choice and print the models OR upload the step files to JLCPCB's 3D printing service and add to your existing PCB order if you don't have access to a 3D printer
+   - Upload the step files to a 3D printing application of your choice and print the models OR upload the step files to JLCPCB's 3D printing service and add to your existing PCB order if you don't have access to a 3D printer
 3. Assemble
    - Solder components to the board following the rules below and using the schematic as reference
       - make sure to solder a 4 pin female header instead of the screen to the designated OLED pins on the board
